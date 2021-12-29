@@ -1,0 +1,148 @@
+{
+  "contractName": "AmaraLendLensTool",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "compInitialIndex",
+      "outputs": [
+        {
+          "internalType": "uint224",
+          "name": "",
+          "type": "uint224"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "contract AToken",
+          "name": "AToken",
+          "type": "address"
+        }
+      ],
+      "name": "ATokenMetadata",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "AToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "supplyAPY",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowAPY",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct AmaraLendLensTool.ATokenData",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "contract AToken[]",
+          "name": "ATokens",
+          "type": "address[]"
+        }
+      ],
+      "name": "calcAPYs",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "AToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "supplyAPY",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "borrowAPY",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct AmaraLendLensTool.ATokenData[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "contract AToken",
+          "name": "AToken",
+          "type": "address"
+        }
+      ],
+      "name": "calAccountAccrued",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "contract AToken[]",
+          "name": "ATokens",
+          "type": "address[]"
+        }
+      ],
+      "name": "calcAccountAllAccrued",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
